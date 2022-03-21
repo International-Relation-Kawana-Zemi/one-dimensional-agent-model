@@ -49,7 +49,13 @@ def Z(o_i_t: np.float128) -> np.float128:
     return np.float128(0)
 
 
-def update_function(o_i_t: np.float128, o_j_t: np.float128, Z: Callable[[np.float128], np.float128]) -> np.float128:
+def update_function(
+    o_i_t: np.float128,
+    o_j_t: np.float128,
+    omega: np.float128 = np.float128(0.5),
+    sigma: np.float128 = np.float128(0.50),
+    Z: Callable[[np.float128], np.float128] = Z,
+) -> np.float128:
     """
     args:
         o_i_t: state of i at time t
@@ -58,4 +64,4 @@ def update_function(o_i_t: np.float128, o_j_t: np.float128, Z: Callable[[np.floa
 
     returns: np.float128
     """
-    return F(o_i_t, o_j_t) * G(o_i_t, o_j_t) + Z(o_i_t)
+    return F(o_i_t, o_j_t, sigma) * G(o_i_t, o_j_t, omega) + Z(o_i_t)
