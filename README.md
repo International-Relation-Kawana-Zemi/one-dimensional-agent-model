@@ -20,4 +20,7 @@ Frameworks expecting callback functions of specific signatures might be type hin
 
 ## 結果
 
+実装の関係上、初期状態は[-1, 1]の一様分布としている。
+詳しい実装は[こちら](./main.py)
+
 [Link](report/report.md)
