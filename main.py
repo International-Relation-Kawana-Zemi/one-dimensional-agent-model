@@ -2,6 +2,7 @@ from typing import Callable
 
 import matplotlib.pyplot as plt
 import numpy as np
+from pyparsing import alphas
 
 from utils.function import Z, update_function
 
@@ -29,6 +30,21 @@ def update(
     return res_array
 
 
+def graph_show(opniion_vector: np.ndarray, _t: int, omega: np.float128, sigma: np.float128):
+
+    plt.figure(figsize=(10, 10))
+    plt.xlim(-1, 1)
+    plt.ylim(0, 100)
+
+    plt.title("t: {}".format(_t))
+    plt.xlabel("opnion-vector")
+    plt.ylabel("frequency")
+
+    plt.hist(opniion_vector, bins=100, range=(-1, 1), alpha=0.7)
+
+    plt.savefig("output/omega={}, sigma={}, t={}.png".format(omega, sigma, _t))
+
+
 def main():
 
     omega: np.float128 = np.float128(0.5)
@@ -39,19 +55,15 @@ def main():
     opinion_vector = np.random.uniform(-1, 1, 100)  # [-1, 1]の一様分布
 
     _trail_max: int = 1000
-    output_t_array: list[int] = [0, 1, 2, 3, 5, 10, 100, 300, 600, 900, 1000]
+    output_t_array: list[int] = [0, 1, 2, 3, 5, 10, 30, 60, 90, 100, 300, 600, 900, 1000]
 
     for _t in range(0, _trail_max + 1):
         if _t in output_t_array:
             print("t: {}".format(_t))
             print("opinion_vector: {}".format(opinion_vector))
             print("")
-            plt.figure(figsize=(10, 10))
-            plt.xlim(-1, 1)
-            plt.ylim(0, 100)
-            plt.hist(opinion_vector, bins=100, density=True, alpha=0.7)
-            # plt.show()
-            plt.savefig("output/omega={}, sigma={}, t={}.png".format(omega, sigma, _t))
+            graph_show(opinion_vector, _t, omega, sigma)
+
         opinion_vector = update(opinion_vector, omega=omega, sigma=sigma)
 
 
