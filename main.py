@@ -16,14 +16,14 @@ def main():
     mean, std = 0.0, 0.3
 
     max_range_number, min_range_number = (max_range_number - mean) / std, (min_range_number - mean) / std
-    opinion_vector = truncnorm.rvs(min_range_number, max_range_number, loc=mean, scale=std, size=100)
 
     omega: np.float128 = np.float128(0.5)
     # epsilon: np.float128 = np.float128(0.50)
 
     for epsilon in np.arange(0.1, 1.0, 0.1):
         # opinion_vector = np.random.uniform(-1, 1, 100)  # [-1, 1]の一様分布
-
+        opinion_vector = truncnorm.rvs(min_range_number, max_range_number, loc=mean, scale=std, size=100)
+        
         _trail_max: int = 1000
         output_t_array: list[int] = [0, 1, 2, 3, 5, 10, 30, 60, 90, 100, 300, 600, 900, 1000]
 
