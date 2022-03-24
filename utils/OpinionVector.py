@@ -41,4 +41,4 @@ def graph_plot(opniion_vector: np.ndarray, _t: int, omega: np.float128, epsilon:
 
     plt.hist(opniion_vector, bins=100, range=(-1, 1), alpha=0.7)
 
-    plt.savefig("output/omega={}, epsilon={}, t={}.png".format(omega, epsilon, _t))
+    plt.savefig("output/epsilon={}/omega={},t={}.png".format(omega, epsilon, _t))
