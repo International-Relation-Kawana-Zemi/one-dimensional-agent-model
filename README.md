@@ -25,25 +25,29 @@ Frameworks expecting callback functions of specific signatures might be type hin
 
 [Link](report/report.md)
 
-## 参考資料(Webサイト等)
+## 参考資料(Web サイト等)
 
 - matplotlib
-    - histgram   
-      `matplotlib.pyplot.hist(x, bins=None, range=None, density=None, weights=None, cumulative=False, bottom=None, histtype='bar', align='mid', orientation='vertical', rwidth=None, log=False, color=None, label=None, stacked=False, normed=None, **kwargs)`がとりうる引数の説明一覧
 
-      [references](https://pythondatascience.plavox.info/matplotlib/%E3%83%92%E3%82%B9%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0)
-    
-    - xlim, ylimによる描画範囲の設定
-      ```python
-      plt.xlim(-2, 12)
-      plt.ylim(-1.5, 1.5)
-      ```
-      のようにするだけ、[reference](https://tech.nkhn37.net/matplotlib-plot-lim-axis/)
+  - histgram  
+    `matplotlib.pyplot.hist(x, bins=None, range=None, density=None, weights=None, cumulative=False, bottom=None, histtype='bar', align='mid', orientation='vertical', rwidth=None, log=False, color=None, label=None, stacked=False, normed=None, **kwargs)`がとりうる引数の説明一覧
 
-    
-- markdown の画像リサイズ   
-  `![***代替テキスト***](***画像のURL***)`   
-  ではなく   
-  `<img src="***画像のURL***" width="***サイズ***">`   
-  を用いる   
+    [references](https://pythondatascience.plavox.info/matplotlib/%E3%83%92%E3%82%B9%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0)
+
+  - xlim, ylim による描画範囲の設定
+    ```python
+    plt.xlim(-2, 12)
+    plt.ylim(-1.5, 1.5)
+    ```
+    のようにするだけ、[reference](https://tech.nkhn37.net/matplotlib-plot-lim-axis/)
+
+- markdown の画像リサイズ  
+  `![***代替テキスト***](***画像のURL***)`  
+  ではなく  
+  `<img src="***画像のURL***" width="***サイズ***">`  
+  を用いる  
   [references](https://qiita.com/shti_f/items/b819d7fd8cb79ae29687)
+
+- 擬似正規分布
+
+  [references](https://teratail.com/questions/271907)
