@@ -8,8 +8,8 @@ from utils.function import Z, update_function
 
 def update(
     array: np.ndarray,
-    omega: np.float128 = np.float128(0.5),
-    epsilon: np.float128 = np.float128(0.50),
+    omega: np.float128,
+    epsilon: np.float128,
     Z: Callable[[np.float128], np.float128] = Z,
 ) -> np.ndarray:
 

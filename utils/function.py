@@ -17,7 +17,7 @@ def step_function(number: np.float128) -> int:
         return 0
 
 
-def F(o_i_t: np.float128, o_j_t: np.float128, epsilon: np.float128 = np.float128(0.50)) -> int:
+def F(o_i_t: np.float128, o_j_t: np.float128, epsilon: np.float128) -> int:
     """
     args:
         o_i_t: state of i at time t
@@ -28,7 +28,7 @@ def F(o_i_t: np.float128, o_j_t: np.float128, epsilon: np.float128 = np.float128
     return step_function(2 * epsilon - np.abs(o_j_t - o_i_t))
 
 
-def G(o_i_t: np.float128, o_j_t: np.float128, omega: np.float128 = np.float128(0.5)) -> np.float128:
+def G(o_i_t: np.float128, o_j_t: np.float128, omega: np.float128) -> np.float128:
     """
     args:
         o_i_t: state of i at time t
@@ -52,8 +52,8 @@ def Z(o_i_t: np.float128) -> np.float128:
 def update_function(
     o_i_t: np.float128,
     o_j_t: np.float128,
-    omega: np.float128 = np.float128(0.5),
-    epsilon: np.float128 = np.float128(0.50),
+    omega: np.float128,
+    epsilon: np.float128,
     Z: Callable[[np.float128], np.float128] = Z,
 ) -> np.float128:
     """
