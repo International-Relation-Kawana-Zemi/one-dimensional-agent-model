@@ -20,6 +20,54 @@ $\omega = 0.5, \varepsilon = 0.5$のとき
 
 ## $\varepsilon$を変化させた場合
 
+### $\varepsilon = 0.001$
+<img src="../output/epsilon=0.001/omega=0.5,t=0.png" width="350">
+<img src="../output/epsilon=0.001/omega=0.5,t=1.png" width="350">
+<img src="../output/epsilon=0.001/omega=0.5,t=2.png" width="350">
+<img src="../output/epsilon=0.001/omega=0.5,t=3.png" width="350">
+<img src="../output/epsilon=0.001/omega=0.5,t=5.png" width="350">
+<img src="../output/epsilon=0.001/omega=0.5,t=10.png" width="350">
+<img src="../output/epsilon=0.001/omega=0.5,t=30.png" width="350">
+<img src="../output/epsilon=0.001/omega=0.5,t=60.png" width="350">
+<img src="../output/epsilon=0.001/omega=0.5,t=90.png" width="350">
+<img src="../output/epsilon=0.001/omega=0.5,t=100.png" width="350">
+<img src="../output/epsilon=0.001/omega=0.5,t=300.png" width="350">
+<img src="../output/epsilon=0.001/omega=0.5,t=600.png" width="350">
+<img src="../output/epsilon=0.001/omega=0.5,t=900.png" width="350">
+<img src="../output/epsilon=0.001/omega=0.5,t=1000.png" width="350">
+
+### $\varepsilon = 0.01$
+<img src="../output/epsilon=0.01/omega=0.5,t=0.png" width="350">
+<img src="../output/epsilon=0.01/omega=0.5,t=1.png" width="350">
+<img src="../output/epsilon=0.01/omega=0.5,t=2.png" width="350">
+<img src="../output/epsilon=0.01/omega=0.5,t=3.png" width="350">
+<img src="../output/epsilon=0.01/omega=0.5,t=5.png" width="350">
+<img src="../output/epsilon=0.01/omega=0.5,t=10.png" width="350">
+<img src="../output/epsilon=0.01/omega=0.5,t=30.png" width="350">
+<img src="../output/epsilon=0.01/omega=0.5,t=60.png" width="350">
+<img src="../output/epsilon=0.01/omega=0.5,t=90.png" width="350">
+<img src="../output/epsilon=0.01/omega=0.5,t=100.png" width="350">
+<img src="../output/epsilon=0.01/omega=0.5,t=300.png" width="350">
+<img src="../output/epsilon=0.01/omega=0.5,t=600.png" width="350">
+<img src="../output/epsilon=0.01/omega=0.5,t=900.png" width="350">
+<img src="../output/epsilon=0.01/omega=0.5,t=1000.png" width="350">
+
+### $\varepsilon = 0.05$
+<img src="../output/epsilon=0.05/omega=0.5,t=0.png" width="350">
+<img src="../output/epsilon=0.05/omega=0.5,t=1.png" width="350">
+<img src="../output/epsilon=0.05/omega=0.5,t=2.png" width="350">
+<img src="../output/epsilon=0.05/omega=0.5,t=3.png" width="350">
+<img src="../output/epsilon=0.05/omega=0.5,t=5.png" width="350">
+<img src="../output/epsilon=0.05/omega=0.5,t=10.png" width="350">
+<img src="../output/epsilon=0.05/omega=0.5,t=30.png" width="350">
+<img src="../output/epsilon=0.05/omega=0.5,t=60.png" width="350">
+<img src="../output/epsilon=0.05/omega=0.5,t=90.png" width="350">
+<img src="../output/epsilon=0.05/omega=0.5,t=100.png" width="350">
+<img src="../output/epsilon=0.05/omega=0.5,t=300.png" width="350">
+<img src="../output/epsilon=0.05/omega=0.5,t=600.png" width="350">
+<img src="../output/epsilon=0.05/omega=0.5,t=900.png" width="350">
+<img src="../output/epsilon=0.05/omega=0.5,t=1000.png" width="350">
+
 ### $\varepsilon = 0.1$
 <img src="../output/epsilon=0.1/omega=0.5,t=0.png" width="350">
 <img src="../output/epsilon=0.1/omega=0.5,t=1.png" width="350">

@@ -29,7 +29,7 @@ def update(
     return res_array
 
 
-def graph_plot(opniion_vector: np.ndarray, _t: int, omega: np.float128, epsilon: np.float128):
+def graph_plot(opiniion_vector: np.ndarray, _t: int, omega: np.float128, epsilon: np.float128):
 
     plt.figure(figsize=(10, 10))
     plt.xlim(-1, 1)
@@ -39,6 +39,6 @@ def graph_plot(opniion_vector: np.ndarray, _t: int, omega: np.float128, epsilon:
     plt.xlabel("opnion-vector")
     plt.ylabel("frequency")
 
-    plt.hist(opniion_vector, bins=100, range=(-1, 1), alpha=0.7)
+    plt.hist(opiniion_vector, bins=100, range=(-1, 1), alpha=0.7)
 
-    plt.savefig("output/epsilon={}/omega={},t={}.png".format(np.round(epsilon, 1), omega, _t))
+    plt.savefig("output/epsilon={}/omega={},t={}.png".format(np.round(epsilon, 3), omega, _t))

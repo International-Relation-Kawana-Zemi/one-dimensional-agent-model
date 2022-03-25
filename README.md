@@ -16,7 +16,7 @@ Frameworks expecting callback functions of specific signatures might be type hin
 
 - requirements.txt を作成する python3 -m pip freeze > requirements.txt
 
-- 仮想環境内にパッケージをインストール python3 -m pip install requests python3 -m ppip install selenium
+- 仮想環境内にパッケージをインストール python3 -m pip install requests python3 -m pip install selenium
 
 ## 結果
 

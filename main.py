@@ -20,9 +20,9 @@ def main():
     omega: np.float128 = np.float128(0.5)
     # epsilon: np.float128 = np.float128(0.50)
 
-    for epsilon in np.arange(0.1, 1.0, 0.1):
-        # opinion_vector = np.random.uniform(-1, 1, 100)  # [-1, 1]の一様分布
-        opinion_vector = truncnorm.rvs(min_range_number, max_range_number, loc=mean, scale=std, size=1000)
+    for epsilon in np.array([0.001, 0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5]):
+        # opinion_vector = np.random.uniform(-1, 1, 1000)  # [-1, 1]の一様分布
+        opinion_vector = truncnorm.rvs(min_range_number, max_range_number, loc=mean, scale=std, size=100)
 
         _trail_max: int = 1000
         output_t_array: list[int] = [0, 1, 2, 3, 5, 10, 30, 60, 90, 100, 300, 600, 900, 1000]
@@ -34,7 +34,7 @@ def main():
                 print("")
                 graph_plot(opinion_vector, _t, omega, epsilon)
 
-            opinion_vector = update(opinion_vector, omega=omega, epsilon=epsilon)
+            opinion_vector = update(array=opinion_vector, omega=omega, epsilon=epsilon)
 
 
 if __name__ == "__main__":
