@@ -13,7 +13,7 @@ def main():
     max_range_number = 1.0
     min_range_number = -1.0
 
-    mean, std = 0.0, 0.3
+    mean, std = 0.0, 0.34
 
     max_range_number, min_range_number = (max_range_number - mean) / std, (min_range_number - mean) / std
 
