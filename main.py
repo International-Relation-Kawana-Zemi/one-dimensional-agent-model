@@ -2,7 +2,7 @@ import numpy as np
 import seaborn as sns
 from scipy.stats import truncnorm
 
-from utils.OpinionVector import graph_plot, update
+from utils.opinion_vector import graph_plot, update
 
 
 def main():
